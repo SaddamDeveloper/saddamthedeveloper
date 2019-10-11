@@ -17,20 +17,20 @@
         <title><?php echo APPNAME; ?></title>
 
         <!--Plugins Css-->
-        <link rel="stylesheet" href="css/plugins.css">
+        <link rel="stylesheet" href="<?php echo URLROOT ?>/css/plugins.css">
         <!--Main Styles Css-->
-        <link rel="stylesheet" href="css/style-light.css">
+        <link rel="stylesheet" href="<?php echo URLROOT ?>/css/style-light.css">
 
-        <link rel="stylesheet" href="css/style-demo.css">
+        <link rel="stylesheet" href="<?php echo URLROOT ?>/css/style-demo.css">
 
         <!--Color Css-->
-        <link class="site-color" rel="stylesheet" href="css/blue-color.css">
+        <link class="site-color" rel="stylesheet" href="<?php echo URLROOT ?>/css/blue-color.css">
 
         <!--Modernizr Js-->
-        <script src="js/modernizr.js"></script>
+        <script src="<?php echo URLROOT ?>/js/modernizr.js"></script>
 
         <!--Favicons-->
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="<?php echo URLROOT ?>/img/favicon.ico" type="image/x-icon">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122650090-3"></script>

@@ -1,13 +1,13 @@
         <!--Jquery JS-->
-        <script src="js/jquery.min.js"></script>
+        <script src="<?php echo URLROOT ?>/js/jquery.min.js"></script>
         <!--Plugins JS-->
-        <script src="js/plugins.min.js"></script>
+        <script src="<?php echo URLROOT ?>/js/plugins.min.js"></script>
         <!--Google Map Api-->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxjdAabKFsk7CHhYq3VNKkwRyonhLHWDo"></script>
         <!--Site Main JS-->
-        <script src="js/main.js"></script>
+        <script src="<?php echo URLROOT ?>/js/main.js"></script>
 
-        <script src="js/main-demo.js"></script>
+        <script src="<?php echo URLROOT ?>/js/main-demo.js"></script>
 
     </body>
 
