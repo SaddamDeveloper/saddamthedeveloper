@@ -8,12 +8,23 @@
       $getData = $this->infoModel->getInfo();
       $services = $this->infoModel->getServices();
       $experiences = $this->infoModel->getExperiences();
+      $posts = $this->infoModel->getBlogPosts();
       $data = [
         'about' =>  $getData,
         'services'  =>  $services,
-        'experiences' =>  $experiences
+        'experiences' =>  $experiences,
+        'posts' =>  $posts
       ];
       $this->view('pages/index', $data);
+    }
+
+    public function blog(){
+        $blogposts = $this->infoModel->getBlogPosts();
+        $data = [
+            'posts' =>  $blogposts
+        ];
+        
+        $this->view('pages/blog', $data);
     }
 
     public function admin(){

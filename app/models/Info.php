@@ -20,6 +20,11 @@
             return $this->db->resultSet();
         }
 
+        public function getBlogPosts(){
+            $this->db->query("SELECT * FROM `blog-post` ORDER BY created_at DESC ");
+            return $this->db->resultSet();
+        }
+
         public function postExperinces($data){
             $this->db->query('INSERT INTO experience (title, company, description, doj, dol) VALUES (:title, :company, :description, :doj, :dol)');
             $this->db->bind(':title', $data['title']);
