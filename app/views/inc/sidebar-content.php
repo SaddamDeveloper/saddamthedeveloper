@@ -609,7 +609,7 @@
                         <div class="row blogs-masonry">
                         <?php foreach($data['posts'] as $post): ?>
                             <div class="col-lg-4 col-sm-6">
-                                <a href="blog/<?php echo $post->id ?>" class="blog-item">
+                                <a href="<?php echo URLROOT ?>/pages/blog/<?php echo $post->id ?>" class="blog-item">
                                     <div class="blog-image">
                                         <img src="<?php echo URLROOT ?>/img/blog/img-1.jpg" alt="#">
                                     </div>

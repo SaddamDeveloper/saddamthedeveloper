@@ -25,6 +25,14 @@
             return $this->db->resultSet();
         }
 
+        
+        public function getBlogPostsById($id){
+            $this->db->query("SELECT * FROM `blog-post` WHERE id = :id");
+            $this->db->bind(':id', $id);
+            return $this->db->single();
+        }
+
+
         public function postExperinces($data){
             $this->db->query('INSERT INTO experience (title, company, description, doj, dol) VALUES (:title, :company, :description, :doj, :dol)');
             $this->db->bind(':title', $data['title']);

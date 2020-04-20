@@ -24,35 +24,24 @@
 
             <!--Main Start-->
             <div id="main" class="site-main">
-
                 <div class="blog-page">
                     <div class="blog-image">
                         <img src="<?php echo URLROOT ?>/img/blog/blog-page-img.jpg" alt="">
                     </div>
                     <div class="blog-container">
-                    <?php //foreach($data['posts']) ?>
                         <div class="row">
 
                             <!--Blog Heading Start-->
                             <div class="blog-heading col-md-8 offset-md-2">
-                                <span class="cat">Fashion</span>
-                                <h1>Best Way To Design</h1>
-                                <span class="blog-date">January 20, 2018</span>
+                                <span class="cat"><?php echo $data['posts']->category ?></span>
+                                <h1><?php echo $data['posts']->title ?></h1>
+                                <span class="blog-date"><?php echo date("F jS, Y, g:i a ", strtotime($data['posts']->created_at)) ?></span>
                             </div>
                             <!--Blog Heading Start-->
 
                             <!--Blog Content Start-->
                             <div class="blog-content col-md-10 offset-md-1">
-                                <p>Consectetur rerum veniam vitae sequi voluptatibus unde soluta dolorum. Sint maxime ducimus tenetur vitae corrupti saepe. Veniam sit ea aliquid odit officiis. Quisquam at labore eum commodi in eius In quisquam a a eaque fuga? Debitis magnam deserunt libero voluptates esse at possimus? Voluptatum voluptates exercitationem voluptatum accusantium doloremque nihil, nihil molestias voluptatibus, minus nostrum, aliquid Quisquam neque fugiat quos veniam facere Dicta eaque laboriosam ut voluptas ipsum Officiis nisi maxime soluta optio ipsum quam Dolores aperiam explicabo sed quas unde laborum molestiae. Porro cum incidunt enim minus nisi excepturi rerum! Exercitationem quia excepturi reiciendis illum velit! Consequatur tempora nihil </p>
-                                <p>
-                                    Sit exercitationem accusamus repudiandae libero natus vero aut Consectetur magni totam sint animi expedita? Eos consequatur facilis corrupti voluptatibus asperiores dolorum vitae ipsa laudantium repellat Voluptates voluptates corporis illum ut asperiores possimus officiis! Laborum rerum eaque minus harum doloremque debitis Ducimus sed commodi commodi illo aliquam. Magnam ipsa blanditiis blanditiis veniam aut Magni unde voluptates culpa dicta placeat! Incidunt delectus beatae excepturi perspiciatis libero praesentium illo Atque sit asperiores unde dolorem cupiditate, nostrum Alias illum voluptate eos commodi modi? Minus est fugiat labore earum obcaecati, omnis. Dicta fugit quod harum eius atque? Exercitationem impedit deleniti quidem voluptas eum cupiditate Consectetur
-                                </p>
-                                <blockquote>
-                                    Consectetur omnis eveniet possimus est necessitatibus. Dolorum magnam officiis ad fugit cumque? Voluptatibus laboriosam incidunt voluptatum beatae dignissimos, nostrum iusto error Optio quam modi adipisci cumque delectus Voluptates iusto doloremque.
-                                </blockquote>
-                                <p>
-                                    Dolor amet culpa esse cum in? Id ab neque ipsa sapiente impedit doloremque quod. Velit veniam in odio voluptatem doloribus Minus laborum voluptates sed ea vel? Aspernatur in quos nulla veniam tempore In quibusdam reprehenderit maiores iste ab Est quae magni nemo repudiandae soluta? Eius qui veniam voluptatem iure molestiae
-                                </p>
+                                <p><?php echo $data['posts']->post ?></p>
                             </div>
                             <!--Blog Content End-->
 
@@ -147,11 +136,9 @@
                                 </form>
 
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>

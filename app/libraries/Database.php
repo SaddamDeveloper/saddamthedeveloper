@@ -68,7 +68,7 @@
     }
 
     //Get the single value
-    public function result(){
+    public function single(){
       $this->execute();
       return $this->stmt->fetch(PDO::FETCH_OBJ);
     }

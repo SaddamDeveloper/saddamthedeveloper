@@ -18,12 +18,12 @@
       $this->view('pages/index', $data);
     }
 
-    public function blog(){
-        $blogposts = $this->infoModel->getBlogPosts();
+    public function blog($id){
+
+        $posts = $this->infoModel->getBlogPostsById($id);
         $data = [
-            'posts' =>  $blogposts
+            'posts' =>  $posts
         ];
-        
         $this->view('pages/blog', $data);
     }
 
